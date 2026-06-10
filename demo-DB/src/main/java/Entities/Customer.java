@@ -7,6 +7,8 @@ public class Customer {
     String customerID;
     String customerName;
     Integer accountNumber;
-    Double
+    Double balance;
+    String Email;
+    String phoneNumber;
 
 }
