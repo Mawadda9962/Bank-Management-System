@@ -42,7 +42,22 @@ public class CustomerService {
         return false;
     }
 
-    public Customer updateCustomer(Customer customer)
+    public Customer updateCustomer(Customer customer) throws Exception{
+
+        Customer existingCustomer = customerRepository.getCustomerById(customer.getCustomerID());
+
+        if(existingCustomer != null){
+            existingCustomer.setCustomerName(customer.getCustomerName());
+            existingCustomer.setAccountNumber(customer.getAccountNumber());
+            existingCustomer.setBalance(customer.getBalance());
+            existingCustomer.setEmail(customer.getEmail());
+            existingCustomer
+        }
+
+
+
+
+    }
 
 
 
