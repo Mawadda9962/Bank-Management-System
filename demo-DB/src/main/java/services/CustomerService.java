@@ -31,7 +31,6 @@ public class CustomerService {
         return customerRepository.save(customer);
     }
 
-
     public Boolean deleteById(Integer id){
         Customer customer = customerRepository.getCustomerById(id);
 
