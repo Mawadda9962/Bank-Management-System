@@ -45,7 +45,6 @@ public class CustomerService {
     public Customer updateCustomer(Customer customer) throws Exception{
 
         Customer existingCustomer = customerRepository.getCustomerById(customer.getCustomerID());
-
         if(existingCustomer != null){
             existingCustomer.setCustomerName(customer.getCustomerName());
             existingCustomer.setAccountNumber(customer.getAccountNumber());
@@ -55,10 +54,6 @@ public class CustomerService {
 
             return customerRepository.save(existingCustomer);
         }
-
-        throw new Exception("Customer not found");;
-
-
+        throw new Exception("Customer not found");
     }
-
 }
