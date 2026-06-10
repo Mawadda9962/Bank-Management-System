@@ -51,7 +51,7 @@ public class CustomerService {
             existingCustomer.setAccountNumber(customer.getAccountNumber());
             existingCustomer.setBalance(customer.getBalance());
             existingCustomer.setEmail(customer.getEmail());
-            existingCustomer
+            existingCustomer.setPhoneNumber(customer.getPhoneNumber());
         }
 
 
