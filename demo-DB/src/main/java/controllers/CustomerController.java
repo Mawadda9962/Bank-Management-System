@@ -4,6 +4,7 @@ import Entities.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import services.CustomerService;
 
@@ -20,6 +21,15 @@ public class CustomerController {
     public List<Customer> getAll() {
         return customerService.getAllCustomer();
     }
+
+    @GetMapping("getById")
+    public Customer getById(@RequestParam Integer id){
+        return customerService.getCustomerById(id);
+    }
+
+
+
+
 
 
 
