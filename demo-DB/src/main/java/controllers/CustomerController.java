@@ -27,6 +27,10 @@ public class CustomerController {
         return customerService.getCustomerById(id);
     }
 
+    @GetMapping("getByName")
+    public Customer getByName(@RequestParam String name){
+        return customerService.getCustomerByName(name);
+    }
 
 
 
