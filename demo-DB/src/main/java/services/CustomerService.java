@@ -32,6 +32,15 @@ public class CustomerService {
     }
 
 
+    public Boolean deleteById(Integer id){
+        Customer customer = customerRepository.getCustomerById(id);
+
+        if (customer != null){
+            customerRepository.delete(customer);
+            return true;
+        }
+        return false;
+    }
 
 
 
