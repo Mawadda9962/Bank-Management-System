@@ -39,6 +39,12 @@ public class CustomerController {
         return customerService.deleteById(id);
     }
 
+    @PutMapping("update")
+    public Customer updateCustomer(@RequestBody Customer customer) throws Exception{
+        return customerService.updateCustomer(customer);
+
+    }
+
 
 
 
