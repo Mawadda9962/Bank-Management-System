@@ -35,7 +35,9 @@ public class CustomerController {
     }
 
     @DeleteMapping("deleteById")
-    public Boolean de
+    public Boolean deleteById(@RequestParam Integer id){
+        return customerService.deleteById(id);
+    }
 
 
 
