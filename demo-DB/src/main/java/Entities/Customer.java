@@ -17,8 +17,8 @@ import lombok.NoArgsConstructor;
 public class Customer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    String customerID;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    Integer customerID;
     String customerName;
     Integer accountNumber;
     Double balance;
