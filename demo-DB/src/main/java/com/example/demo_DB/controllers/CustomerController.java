@@ -1,9 +1,9 @@
-package controllers;
+package com.example.demo_DB.controllers;
 
-import Entities.Customer;
+import com.example.demo_DB.Entities.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import services.CustomerService;
+import com.example.demo_DB.services.CustomerService;
 
 import java.util.List;
 
@@ -40,16 +40,9 @@ public class CustomerController {
     }
 
     @PutMapping("update")
-    public Customer updateCustomer(@RequestBody Customer customer) throws Exception{
-        return customerService.updateCustomer(customer);
+    public Customer updateCustomer(@RequestParam Integer id,@RequestBody Customer customer) throws Exception{
+        return customerService.updateCustomer(id,customer);
 
     }
-
-
-
-
-
-
-
 
 }

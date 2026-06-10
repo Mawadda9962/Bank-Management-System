@@ -1,7 +1,7 @@
-package services;
+package com.example.demo_DB.services;
 
-import Entities.Customer;
-import Repositories.CustomerRepository;
+import com.example.demo_DB.Entities.Customer;
+import com.example.demo_DB.Repositories.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -41,7 +41,7 @@ public class CustomerService {
         return false;
     }
 
-    public Customer updateCustomer(Customer customer) throws Exception{
+    public Customer updateCustomer(Integer id , Customer customer) throws Exception{
 
         Customer existingCustomer = customerRepository.getCustomerById(customer.getCustomerID());
         if(existingCustomer != null){
