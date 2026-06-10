@@ -52,27 +52,13 @@ public class CustomerService {
             existingCustomer.setBalance(customer.getBalance());
             existingCustomer.setEmail(customer.getEmail());
             existingCustomer.setPhoneNumber(customer.getPhoneNumber());
+
+            return customerRepository.save(existingCustomer)
         }
 
-
+        throw new Exception("Customer not found")
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
