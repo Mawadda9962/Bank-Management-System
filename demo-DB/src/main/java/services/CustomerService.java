@@ -23,7 +23,8 @@ public class CustomerService {
     }
 
     public Customer getCustomerByName(String name){
-        return customerRepository.
+        return customerRepository.getCustomerByName(name);
+
     }
 
 
