@@ -34,6 +34,9 @@ public class CustomerController {
         return customerService.addCustomer(customer);
     }
 
+    @DeleteMapping("deleteById")
+    public Boolean de
+
 
 
 
