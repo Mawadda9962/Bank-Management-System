@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 @Entity
 public class Customer {
     String customerID;
-    String
+    String customerName;
+    Integer accountNumber;
+    Double
 
 }
