@@ -6,13 +6,7 @@ The system provides a set of APIs for managing customer information, including c
 The project follows a layered architecture consisting of Controller, Service, Repository, and Entity layers.
 
 
-Technologies Used:
-Java
-Spring Boot
-Spring Data JPA
-MySQL
-Maven
-Postman
+Technologies Used: Java, Spring Boot, Spring Data JPA, MySQL, Maven, Postman.
 
 
 Features:
